@@ -57,7 +57,7 @@ const About = () => {
         your organization thrive.
         <p className="mt-5">
           {" "}
-          For the past 7+ years, I have piloted content strategy in both the
+          For the past 8+ years, I have piloted content strategy in both the
           agency setting — servicing clients with $1M+ ad spends — and for 
           award-winning corporate content marketing machines.
         </p>

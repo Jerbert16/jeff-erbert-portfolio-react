@@ -18,6 +18,9 @@ import {
   threejs,
   dmagazine,
   ocn,
+  slhcblog,
+  slhcwebcopy,
+  theceshopebook,
   socialmediabackend,
   sqlecommercebackend,
   weatherapi,
@@ -27,6 +30,9 @@ import {
   stargazer,
   python,
   travelbuddy,
+  passwordgenerator,
+  readmegenerator,
+  personalsite,
 } from "../assets";
 
 export const navLinks = [
@@ -43,7 +49,7 @@ export const navLinks = [
     rel:"",
   },
   {
-    id: "https://drive.google.com/file/d/1Um2toDbWkU8vmoBwFTvUQMa7N1ITLv-V/view?usp=sharing",
+    id: "https://drive.google.com/file/d/18OT51GFynfQCpPtVaLHhIdPGWnUH2tBX/view?usp=sharing",
     title: "Resume",
     target: '"_blank"',
     rel:'"noopener noreferrer"',
@@ -146,8 +152,8 @@ const experiences = [
     points: [
       "Create, edit, and manage web content via CMS (Content Management System) with best practice SEO strategy at the forefront.",
       "Act as primary contributor to multi-award winning (Content Marketing Awards) to our corporate blog and site which garnered 1 million + views monthly.",
-      "Responsible for developing, coordinating, and executing a growth focused content strategy. In the first 6 months, we saw a $60k increase in revenue — a figure that’s poised to grow exponentially.",
-      "Produce ad copy for multi-faceted digital marketing campaigns, including those for social media, AdWords, and Google Display Network.",
+      "Spearheaded a growth-focused content strategy. In the first 6 months, we saw a $60k increase in revenue.",
+      "Produced ad copy for omni-channel marketing campaigns including sponsored content, PPC ads ($1+ million ad spend), social media posts, ebooks, and web pages.",
       "Analyze key account metrics and communicate strategy shifts to internal stakeholders.",
     ],
   },
@@ -158,16 +164,17 @@ const experiences = [
     iconBg: "#261a3c",
     date: "Aug. 2022 - Current",
     points: [
-      "Lead efforts to develop and execute a ground-up omni-channel content marketing strategy for our new product offerings in the healthcare robotics field",
+      "Lead efforts to develop and execute a ground-up omni-channel content marketing strategy for our new product offerings in the healthcare robotics field.",
       "Pilot the construction of a completely new site - helping code along the way and working with software developers in Germany.",
+      "Engineer and customize all landing pages related to PPC efforts.",
       "Collaborate across the organization with subject matter experts to take technical information and turn it into effective marketing literature like blogs, white papers, ebooks, infographics, brochures, and more.",
       "Perform in-depth SEO competitor analysis and guide our strategies around key areas of opportunity.",
-      "Present monthly KPI analysis to c-suite and other internal stakeholders. In 2023 alone, we have seen 1000% growth in web traffic and added 4k+ new followers on LinkedIn.",
+      "Present monthly KPI analysis to c-suite and other internal stakeholders. In 2023, we witnessed 1000% growth in web traffic and added 4k+ new followers on LinkedIn. In 2024, we grew 407.9% in organic keywords and our blog won a dotCOMM awards gold medal for content marketing.",
     ],
   },
 ];
 
-const projects = [
+const softwareProjects = [
   {
     name: "Python Powered Travel Planning App + AI",
     description:
@@ -238,6 +245,77 @@ const projects = [
       "https://github.com/Jerbert16/no-sql-same-great-database-functionality",
   },
   {
+    name: "Random Password Generator",
+    description:
+      "This application uses HTML, JavaScipt, and CSS to help make random ultra-secure passwords.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: passwordgenerator,
+    icon: github,
+    source_code_link:
+      "https://github.com/Jerbert16/operation-password-generator-refactoring-week-3?tab=readme-ov-file",
+  },
+  {
+    name: "README Generator Tool",
+    description:
+      "Writing READMEs in markup can be a pain. This Node.js-powered app makes it easy for devs.",
+    tags: [
+      {
+        name: "README",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Inquirer",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: readmegenerator,
+    icon: github,
+    source_code_link:
+      "https://github.com/Jerbert16/node-JS-README-generator-tool/tree/main",
+  },  {
+    name: "My Personal Site (AKA This Site)",
+    description:
+      "My site uses Three.js, React, and Tailwind CSS to create an engaging UX, complete with 3D elements.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "3D-Elements",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: personalsite,
+    icon: github,
+    source_code_link:
+      "https://github.com/Jerbert16/jeff-erbert-portfolio-react",
+  },
+]
+
+  const writingSamples = [
+  {
     name: "Magazine Post",
     description:
       "A sponsored post I authored published in DMagazine. The goal was to inform and inspire perspective real estate professionals.",
@@ -306,6 +384,72 @@ const projects = [
     source_code_link:
       "https://ourcommunitynow.com/automotive/the-2021-mercedes-amg-e53-coupe-will-make-you-a-smooth-criminal",
   },
+  {
+    name: "Trending Topic Blog",
+    description: "Even though this blog has search value, it was created with the intent to share on social and give sales a trendy conversation starter.",
+    tags: [
+      {
+        name: "Trending",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Short-Blog",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Listicle",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: slhcblog,
+    icon: penicon,
+    source_code_link:
+      "https://www.swisslog-healthcare.com/en-us/company/new-blog-overview-page/5-areas-where-ai-could-impact-hospital-operations",
+  },
+  {
+    name: "eBook",
+    description: "When paired with design, the eBook can be a powerful and fun medium that permits its creators to go in depth while exercising their creativity.",
+    tags: [
+      {
+        name: "eBook",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Long-Form",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Design-Matters",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: theceshopebook,
+    icon: penicon,
+    source_code_link:
+      "https://drive.google.com/file/d/1d59uKPsgE3_wQ9_wl7-UunDYwa76s4b9/view?usp=sharing",
+  },
+  {
+    name: "Web Copy (Draft Form)",
+    description: "This is the web copy draft that eventually became the language featured on the Swisslog-Healthcare.com home page.",
+    tags: [
+      {
+        name: "Web-Copy",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Home-Page",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Short-Form",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: slhcwebcopy,
+    icon: penicon,
+    source_code_link:
+      "https://drive.google.com/file/d/1Y7bvRQuF0tjHtS8AesZ0n4ldbdMqosUi/view?usp=sharing",
+  },
 ];
 
-export { services, technologies, experiences, projects };
+export { services, technologies, experiences, softwareProjects, writingSamples };

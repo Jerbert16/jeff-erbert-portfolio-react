@@ -30,19 +30,31 @@ import slhclogo from "./company/slhclogo.png";
 
 
 import dmagazine from "./dmagazine.png";
+import slhcblog from "./slhcblog.png";
+import slhcwebcopy from "./slhcwebcopy.png";
+import theceshopebook from "./theceshopebook.png";
 import ocn from "./ocn.png";
 import seoblog from "./seoblog.png";
 import socialmediabackend from "./socialmediabackend.png";
+import readmegenerator from "./readmegenerator.png";
+import personalsite from "./personalsite.png"
 import sqlecommercebackend from "./sqlecommercebackend.png";
 import weatherapi from "./weatherapi.png";
 import stargazer from "./stargazer.jpg";
 import rocketicon from "./rocketicon.png";
 import jeff from "./jeff.jpg";
 import lilogo from "./lilogo.png";
-import travelbuddy from "./travelbuddy.png"
+import travelbuddy from "./travelbuddy.png";
+import passwordgenerator from "./passwordgenerator.png";
 
 
 export {
+  theceshopebook,
+  slhcwebcopy,
+  slhcblog,
+  passwordgenerator,
+  readmegenerator,
+  personalsite,
   travelbuddy,
   python,
   stargazer,

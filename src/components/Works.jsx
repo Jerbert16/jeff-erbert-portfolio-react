@@ -3,7 +3,7 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import { softwareProjects, writingSamples } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -70,17 +70,25 @@ const Works = () => {
         <p
           className="mt-5 text-secondary text-[17px] max-w-6xl leading-[30px]"
         >
-          <span className="pink-text-gradient">Along with the site you're currently on</span> — built using <span className="blue-text-gradient">React,</span> <span className="green-text-gradient">Tailwind,</span> and <span className="pink-text-gradient">JavaScript</span> (...three.js for the technology balls, space probe, and saucer 3D models...) — the following projects showcase my
+          Along with the site you're currently on — built using <span className="blue-text-gradient">React,</span> <span className="green-text-gradient">Tailwind CSS,</span> and <span className="pink-text-gradient">JavaScript</span> — the following projects showcase my
           experience as a professional writer and a developer. Here, you'll find
           links to some of my writing and links to my GitHub that I hope give a
           sneak peek at my skills and my curiosity.
         </p>
       </div>
-      <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+      <h2 className="mt-20 mb-7 pl-1 text-[22px]">Software Development Projects:</h2>
+      <div className="mt-5 flex flex-wrap gap-7">
+        {softwareProjects.map((softwareProjects, index) => (
+          <ProjectCard key={`softwareProjects-${index}`} index={index} {...softwareProjects} />
         ))}
       </div>
+      <h2 className="mt-20 mb-7 pl-1 text-[22px]">Writing Samples:</h2>
+      <div className="mt-5 flex flex-wrap gap-7">
+        {writingSamples.map((writingSamples, index) => (
+          <ProjectCard key={`writingSamples-${index}`} index={index} {...writingSamples} />
+        ))}
+      </div>
+      <h2 className="mt-20 mb-7 pl-1 text-[18px] w-full flex justify-center">Hungry For More? Please Reach Out!</h2>
     </>
   );
 };
