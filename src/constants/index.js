@@ -43,22 +43,28 @@ export const navLinks = [
     rel:"",
   },
   {
+    id: "#experience",
+    title: "Experience",
+    target: "",
+    rel:"",
+  },
+  {
     id: "#work",
     title: "Work",
     target: "",
     rel:"",
   },
   {
-    id: "https://drive.google.com/file/d/18OT51GFynfQCpPtVaLHhIdPGWnUH2tBX/view?usp=sharing",
-    title: "Resume",
-    target: '"_blank"',
-    rel:'"noopener noreferrer"',
-  },
-  {
     id: "#contact",
     title: "Contact",
     target: "",
     rel:"",
+  },
+  {
+    id: "https://drive.google.com/file/d/1jMY07cG_lfgKyGGja9eDVOxc7XP49Rdt/view?usp=sharing",
+    title: "Resume",
+    target: '"_blank"',
+    rel:'"noopener noreferrer"',
   },
 
 ];
@@ -141,6 +147,7 @@ const experiences = [
       "Produce write-ups, reviews, interviews, AP style news articles, and other long form pieces for our website that drew 250 - 500K unique visitors weekly.",
       "Implement and maintain best practice SEO strategy using various tools (SEM Rush, Yoast, Google Trends, Search Console).",
       "Analyze key campaign metrics to inform and direct overall content strategy.",
+      "Nurture relationships through regular client-facing meetings, education, and listening",
     ],
   },
   {
@@ -152,8 +159,8 @@ const experiences = [
     points: [
       "Create, edit, and manage web content via CMS (Content Management System) with best practice SEO strategy at the forefront.",
       "Act as primary contributor to multi-award winning (Content Marketing Awards) to our corporate blog and site which garnered 1 million + views monthly.",
-      "Spearheaded a growth-focused content strategy. In the first 6 months, we saw a $60k increase in revenue.",
-      "Produced ad copy for omni-channel marketing campaigns including sponsored content, PPC ads ($1+ million ad spend), social media posts, ebooks, and web pages.",
+      "Spearhead a growth-focused content strategy. In the first 6 months, we saw a $60k increase in revenue.",
+      "Produce ad copy for omni-channel marketing campaigns including sponsored content, PPC ads ($1+ million ad spend), social media posts, ebooks, and web pages.",
       "Analyze key account metrics and communicate strategy shifts to internal stakeholders.",
     ],
   },
@@ -162,23 +169,23 @@ const experiences = [
     company_name: "Swisslog Healthcare",
     icon: slhclogo,
     iconBg: "#261a3c",
-    date: "Aug. 2022 - Current",
+    date: "Aug. 2022 - Present",
     points: [
       "Lead efforts to develop and execute a ground-up omni-channel content marketing strategy for our new product offerings in the healthcare robotics field.",
       "Pilot the construction of a completely new site - helping code along the way and working with software developers in Germany.",
       "Engineer and customize all landing pages related to PPC efforts.",
       "Collaborate across the organization with subject matter experts to take technical information and turn it into effective marketing literature like blogs, white papers, ebooks, infographics, brochures, and more.",
       "Perform in-depth SEO competitor analysis and guide our strategies around key areas of opportunity.",
-      "Present monthly KPI analysis to c-suite and other internal stakeholders. In 2023, we witnessed 1000% growth in web traffic and added 4k+ new followers on LinkedIn. In 2024, we grew 407.9% in organic keywords and our blog won a dotCOMM awards gold medal for content marketing.",
+      "Present monthly KPI analysis to c-suite and other internal stakeholders. In 2023, we witnessed 1000% growth in web traffic and added 4k+ new followers on LinkedIn. In 2024, we grew 715.49% in organic keywords and our blog won a dotCOMM awards gold medal for content marketing.",
     ],
   },
 ];
 
 const softwareProjects = [
   {
-    name: "Python Powered Travel Planning App + AI",
+    name: "AI Travel Planning App",
     description:
-      "Travel planning app built using Python, Flask, and OpenAI_API (and then some).",
+      "A simple travel planning app built using Python, Flask, and OpenAI_API (and then some).",
     tags: [
       {
         name: "Python",
@@ -336,7 +343,7 @@ const softwareProjects = [
     image: dmagazine,
     icon: penicon,
     source_code_link:
-      "https://www.dmagazine.com/sponsored/2020/03/the-big-ds-habanero-hot-real-estate-market-is-fertile-ground-for-aspiring-real-estate-agents/",
+      "https://web.archive.org/web/20200408081739/https://www.dmagazine.com/sponsored/2020/03/the-big-ds-habanero-hot-real-estate-market-is-fertile-ground-for-aspiring-real-estate-agents/",
   },
   {
     name: "SEO-Focused Blog",
@@ -364,7 +371,7 @@ const softwareProjects = [
   {
     name: "Product Review",
     description:
-      "For several years, I was given vehicles on media loan to thoroughly evaluate and write reviews. Needless to say, it was a gas.",
+      "For several years, I was given vehicles from the manufacturer to thoroughly evaluate and write reviews. Needless to say, it was a gas.",
     tags: [
       {
         name: "Media",
@@ -429,8 +436,8 @@ const softwareProjects = [
       "https://drive.google.com/file/d/1d59uKPsgE3_wQ9_wl7-UunDYwa76s4b9/view?usp=sharing",
   },
   {
-    name: "Web Copy (Draft Form)",
-    description: "This is the web copy draft that eventually became the language featured on the Swisslog-Healthcare.com home page.",
+    name: "Web Copy (Draft)",
+    description: "This is a draft of the web copy that eventually became the language featured on the Swisslog-Healthcare.com home page.",
     tags: [
       {
         name: "Web-Copy",

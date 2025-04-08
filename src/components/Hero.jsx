@@ -2,11 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ProbeCanvas } from "./canvas";
-import { jeff, lilogo } from "../assets";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="flex relative w-full h-screen mx-auto justify-center">
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
@@ -18,17 +17,20 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Howdy, I'm Jeff
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <h2 className={`${styles.heroSubText} text-white-100`}>
             ...a <span className="text-[#915eff]">writer and developer</span>{" "}
             <br /> with a hunger to learn.
-          </p>
+          </h2>
         </div>
       </div>
       <ProbeCanvas />
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-        <a href="#about">
-          <div className="w-[35px] h-[65px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 m-5">
-            <motion.dev
+      <div className="flex absolute w-full max-w-7xl sm:bottom-10 bottom-32">
+      <div className="w-1/2">
+      </div>
+      <div className="w-1/2 flex justify-center">
+      <a href="#about">
+          <div className="w-[30px] h-[55px] rounded-3xl border-4 border-secondary flex justify-center p-2">
+            <motion.div
               animate={{
                 y: [0, 24, 0],
               }}
@@ -41,7 +43,7 @@ const Hero = () => {
             />
           </div>
         </a>
-        <h4 className="m-5">Pssst.. click and drag the Voyager probe</h4>
+        </div>
       </div>
     </section>
   );

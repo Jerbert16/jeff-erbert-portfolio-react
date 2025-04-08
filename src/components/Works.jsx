@@ -25,9 +25,9 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full flex flex-wrap cursor-pointer"
+        className="bg-tertiary p-4 rounded-2xl sm:w-[300px] w-full flex flex-wrap cursor-pointer"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[180px]">
           <img
             src={image}
             alt={name}
@@ -77,13 +77,13 @@ const Works = () => {
         </p>
       </div>
       <h2 className="mt-20 mb-7 pl-1 text-[22px]">Software Development Projects:</h2>
-      <div className="mt-5 flex flex-wrap gap-7">
+      <div className="mt-5 flex flex-wrap gap-7 w-full justify-center">
         {softwareProjects.map((softwareProjects, index) => (
           <ProjectCard key={`softwareProjects-${index}`} index={index} {...softwareProjects} />
         ))}
       </div>
       <h2 className="mt-20 mb-7 pl-1 text-[22px]">Writing Samples:</h2>
-      <div className="mt-5 flex flex-wrap gap-7">
+      <div className="mt-5 flex flex-wrap gap-7 w-full justify-center">
         {writingSamples.map((writingSamples, index) => (
           <ProjectCard key={`writingSamples-${index}`} index={index} {...writingSamples} />
         ))}
@@ -93,4 +93,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "work");

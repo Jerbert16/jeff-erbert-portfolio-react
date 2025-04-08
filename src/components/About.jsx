@@ -1,12 +1,12 @@
 import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { jeff, lilogo } from "../assets";
+
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -36,10 +36,16 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-          <div 
-      onClick={() => window.open('https://www.linkedin.com/in/jeff-erbert/', "_blank")}
-      className="flex flex-wrap space-evenly items-center cursor-pointer mb-14 w-max">
-            <img src={jeff} className="w-[15%] h-[15%] rounded-full mt-5 shadow-card green-pink-gradient p-[1px]" />
+          <div
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/jeff-erbert/", "_blank")
+            }
+            className="flex flex-wrap space-evenly items-center cursor-pointer mb-14 w-max"
+          >
+            <img
+              src={jeff}
+              className="w-16 h-16 sm:w-[16%] sm:h-[16%] rounded-full shadow-card green-pink-gradient p-[3px]"
+            />
             <img src={lilogo} className="w-[35px] h-[30px] mt-5 ml-5" />
             <p className="mt-5 ml-1">Let's Connect.</p>
           </div>
@@ -49,7 +55,7 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-5 text-secondary text=[-17px] max-w-6xl leading-[30px]"
+        className="mt-5 text-secondary text=[-18px] max-w-6xl leading-[30px]"
       >
         Equipped with a keyboard and the unwavering belief that "normal" is just
         a setting on a washing machine, I'm here to harness the power of the
@@ -58,7 +64,7 @@ const About = () => {
         <p className="mt-5">
           {" "}
           For the past 8+ years, I have piloted content strategy in both the
-          agency setting — servicing clients with $1M+ ad spends — and for 
+          agency setting — servicing clients with $1M+ ad spends — and for
           award-winning corporate content marketing machines.
         </p>
         <p className="mt-5">
@@ -69,7 +75,8 @@ const About = () => {
         <p className="mt-5">
           Today, I'm focused mostly on coding to combine technical dev-know-how
           with my creative side to truly push the boundaries of what's possible,
-          and to deliver a user experience that intrigues, inspires, and improves lives.
+          and to deliver a user experience that intrigues, inspires, and
+          improves lives.
         </p>
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">

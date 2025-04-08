@@ -51,7 +51,7 @@ const ProbeCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [20, 3, 10], fov: 25 }}
+      camera={{ position: [20, 7, 15], fov: 27 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
